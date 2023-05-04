@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/toplab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="TOPLA"
+        app:layout_constraintEnd_toStartOf="@+id/cikarb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sayi2" />
+
+    <Button
+        android:id="@+id/cikarb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="22dp"
+        android:text="ÇIKAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/toplab"
+        app:layout_constraintTop_toBottomOf="@+id/sayi2" />
+
+    <Button
+        android:id="@+id/carpb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="ÇARP"
+        app:layout_constraintEnd_toStartOf="@+id/bolb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toplab" />
+
+    <Button
+        android:id="@+id/bolb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="22dp"
+        android:text="BÖL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/carpb"
+        app:layout_constraintTop_toBottomOf="@+id/cikarb" />
+
+    <EditText
+        android:id="@+id/sayi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="193dp"
+        android:ems="10"
+        android:hint="Birinci Sayı:"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/sayi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="İkinci Sayı :"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/sayi1"
+        app:layout_constraintTop_toBottomOf="@+id/sayi1" />
+
+    <TextView
+        android:id="@+id/sonuctext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="31dp"
+        android:text="Sonuc : "
+        app:layout_constraintEnd_toStartOf="@+id/bolb"
+        app:layout_constraintTop_toBottomOf="@+id/carpb" />
+</androidx.constraintlayout.widget.ConstraintLayout>
